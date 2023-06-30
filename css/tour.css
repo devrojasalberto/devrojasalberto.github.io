@@ -30,11 +30,11 @@ body{
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     background: linear-gradient(45deg, red,blue,deeppink,blue,red,blue,deeppink,blue );
 background-size: 700%;
-border-radius: 10px;
+border-radius: 50px;
 filter: blur(8px);
 animation: glowing 25s linear infinite;
 }
@@ -74,6 +74,7 @@ animation: glowing 25s linear infinite;
     color: #fff;
 }
 
+
 .hero::before{
     content: "";
     position: absolute;
@@ -95,8 +96,17 @@ animation: glowing 25s linear infinite;
 }
 
 .nav__title {
-    font-weight: 300;
+    font-weight: 100;
 }
+
+.nav__corallogo{
+    position: center;
+    width: 77px;
+    height: 77px;
+    bottom: 0p;
+    z-index: 100;
+}
+
 
 .nav__items {
     list-style: none;
@@ -155,9 +165,19 @@ animation: glowing 25s linear infinite;
     justify-self: center;
     color: #fff;
     text-decoration: none;
-    padding: 13px 30px;
-    border-radius: 32px;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
 }
+
+.cta:hover{
+    transition: all 0.5s ease;
+    box-shadow: .5rem .5rem 1rem #fff, -.5rem -.5rem 1rem #ccc  
+}
+
+.cta:active{
+    box-shadow: inset .2rem 2rem 1rem #ccc, -.2rem -.2rem 2rem #fff  
+}
+
 
 /*about que loco*/
 .about{
@@ -355,9 +375,8 @@ overflow: hidden ;
 
     .nav__link--menu{
         position: fixed;
-        background-color: #0000008c;
+        background-color: #000000cb;
         top: 0;
-        left: 0;
         height: 100%;
         width: 100%;
         display: flex;
@@ -367,7 +386,7 @@ overflow: hidden ;
         z-index: 100;
         opacity: 0;
         pointer-events: none;
-        transition: .7s opacity;
+        transition: 0.7s opacity;
 }
 
 .nav__link--show{
@@ -377,11 +396,13 @@ overflow: hidden ;
 }
    
 .nav__close{
+    background-color: #fff;
     position: absolute;
     top: 30px;
     right: 30px;
     width: 30px;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .hero__title{
