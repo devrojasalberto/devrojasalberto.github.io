@@ -83,6 +83,7 @@ animation: glowing 25s linear infinite;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/lossantos.jpg');
+    
     background-size: cover;
     clip-path: circle(70% at 50% 25%);
     z-index: -1;
@@ -99,8 +100,8 @@ animation: glowing 25s linear infinite;
     font-weight: 100;
 }
 
-.nav__corallogo{
-    position: center;
+.nav__coral-logo{
+    margin: 0 auto;
     width: 77px;
     height: 77px;
     bottom: 0p;
@@ -386,6 +387,7 @@ overflow: hidden ;
         z-index: 100;
         opacity: 0;
         pointer-events: none;
+       
         transition: 0.7s opacity;
 }
 
